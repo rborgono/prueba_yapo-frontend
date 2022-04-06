@@ -1,4 +1,4 @@
-# prueba_equifax-frontend
+# prueba_yapo-frontend
 
 Ejecutar:
 ```sh
