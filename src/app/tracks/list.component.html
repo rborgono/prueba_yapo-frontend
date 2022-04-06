@@ -1,0 +1,26 @@
+<h2>Listado de Canciones</h2>
+<div class="divWidthTable">
+    <input type="text" class="form-control inputBuscar" placeholder="Buscar Banda..." [(ngModel)]="filterBand" name="filterBand"/>
+</div>
+<div class="listTable">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nombre Canción</th>
+                <th>Nombre Album</th>
+                <th>Url preview</th>
+                <th>Precio</th>
+                <th>Fecha de lanzamiento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let track of tracks">
+                <td class="nowrap">{{track.nombre_tema}}</td>
+                <td class="nowrap">{{track.nombre_album}}</td>
+                <td class="nowrap">{{track.preview_url}}</td>
+                <td class="nowrap">{{track.precio}}</td>
+                <td class="nowrap">{{track.fecha_lanzamiento}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
